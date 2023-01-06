@@ -18,7 +18,9 @@
 .container {
     display: flex;
     align-items: center;
-    width: 375px;
+    width: 100%;
+    min-width: 375px;
+    /* width: 375px; */
     background-color: var(--very-dark-blue);
     min-height: 100vh;
 }
@@ -27,11 +29,11 @@
     width: 90%;
     height: max-content;
     background-color: var(--dark-blue);
-    padding: 8%;
     color: white;
     font-family: var(--overpass);
-    border-radius: 20px;
+    border-radius: 10px;
     margin: 0px auto;
+    padding: 25px;
 }
 
 .star {
@@ -42,7 +44,7 @@
     background-position: center;
     background-color: rgba(124, 135, 152, 0.1);
     border-radius: 50%;
-    margin-bottom: 8%;
+    margin-bottom: 15px;
 }
 
 .big-text {
@@ -52,14 +54,14 @@
 }
 
 .how {
-    margin-bottom: 5%;
+    margin-bottom: 10px;
 }
 
 .small-text {
     font-size: 14px;
     line-height: 1.6em;
     color: var(--light-grey);
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .please {
@@ -112,7 +114,7 @@ input[type="radio"]::before {
 
 .submit {
     width: 100%;
-    height: 50px;
+    height: 45px;
     border-radius: 30px;
     background-color: var(--orange);
     border: none;
@@ -135,27 +137,27 @@ input[type="radio"]::before {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 10%;
+    /* padding-top: 10%; */
 }
 
 .thanks-img {
-    margin-bottom: 8%;
+    margin-bottom: 20px;
     width: 150px;
 }
 
 .selection {
     background-color: rgba(124, 135, 152, 0.1);
-    padding: 0.5em 0.9em;
+    padding: 0.6em 0.9em;
     font-size: 14px;
     color: var(--orange);
     font-weight: 400;
     border-radius: 20px;
-    margin-bottom: 8%;
+    margin-bottom: 20px;
     line-height: 14px;
 }
 
 .thanks {
-    margin-bottom: 8%;
+    margin-bottom: 18px;
     font-weight: 500;
 }
 
@@ -167,10 +169,59 @@ input[type="radio"]::before {
     display: none;
 }
 
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 500px) {
+
+    .front-face, .back-face {
+        width: 450px;
+        border-radius: 30px;
+        padding: 40px;
+    }
+
+    .star{
+        width: 50px;
+        height: 50px;
+    }
+
+    .how {
+        font-size: 26px;
+    }
+
+    .please {
+        font-size: 16px;
+    }
+
+    .rating {
+        width: 60px;
+        height: 60px;
+    }
+
+    input[type="radio"]::before {
+        font-size: 18px;
+    }
+
+    .submit {
+        height: 50px;
+    }
+
+    .thanks-img {
+        width: 190px;
+        margin-bottom: 30px;
+    }
+
+    .selection {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .thanks {
+        font-size: 30px;
+    }
+
+    .appreciation {
+        font-size: 16px;
+    }
     
 }
-
 
 .attribution {
     font-size: 11px; 
