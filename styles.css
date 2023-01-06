@@ -20,7 +20,6 @@
     align-items: center;
     width: 100%;
     min-width: 375px;
-    /* width: 375px; */
     background-color: var(--very-dark-blue);
     min-height: 100vh;
 }
@@ -58,7 +57,7 @@
 }
 
 .small-text {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.6em;
     color: var(--light-grey);
     font-weight: 500;
@@ -129,6 +128,7 @@ input[type="radio"]::before {
 .submit:hover {
     background-color: white;
     color: var(--orange);
+    cursor: pointer;
 }
 
 
